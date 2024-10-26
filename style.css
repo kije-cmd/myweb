@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(240, 240, 245, 0.8); /* Warna latar belakang dengan transparansi */
+    background-image: url('minang.png'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Memastikan gambar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    position: relative; /* Mengatur posisi untuk elemen anak */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan transparansi */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Style lainnya tetap sama */
+
+
+.form-section {
+    margin-bottom: 40px; /* Spasi lebih banyak antar section */
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 14px; /* Padding lebih besar untuk input */
+    box-sizing: border-box;
+    border: 2px solid #007BFF; /* Border yang lebih tebal dan berwarna */
+    border-radius: 8px; /* Sudut yang lebih membulat pada input */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi untuk border dan bayangan */
+}
+
+input:focus {
+    border-color: #0056b3; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Bayangan saat fokus */
+}
+
+button {
+    padding: 14px 24px; /* Padding yang lebih besar untuk tombol */
+    background-color: #007BFF; /* Warna tombol */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Sudut yang lebih membulat pada tombol */
+    transition: background-color 0.3s, transform 0.2s; /* Transisi warna latar belakang dan transformasi */
+    font-size: 1.1em; /* Ukuran font untuk tombol */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Bayangan untuk tombol */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px; /* Spasi lebih banyak di atas tabel */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Border yang lebih lembut untuk tabel */
+}
+
+th, td {
+    padding: 14px; /* Padding lebih besar untuk sel tabel */
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF; /* Warna latar belakang untuk header tabel */
+    color: white; /* Warna teks header tabel */
+    font-weight: bold; /* Cetak tebal untuk header */
+    border-bottom: 2px solid #0056b3; /* Garis bawah untuk header */
+}
+
+td {
+    background-color: #f9f9f9; /* Warna latar belakang untuk sel tabel */
+    transition: background-color 0.3s; /* Transisi warna latar belakang pada hover */
+}
+
+td:hover {
+    background-color: #e9e9e9; /* Warna latar belakang saat hover pada sel */
+}
+
+.total-price {
+    margin-top: 30px; /* Spasi lebih banyak di atas total harga */
+    font-weight: bold;
+    font-size: 1.6em; /* Ukuran font yang lebih besar untuk total harga */
+    color: #007BFF; /* Warna biru untuk total harga */
+    text-align: right; /* Rata kanan untuk total harga */
+    border-top: 2px solid #007BFF; /* Garis atas untuk pemisah */
+    padding-top: 15px; /* Spasi di atas total harga */
+}

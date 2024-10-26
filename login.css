@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3); /* Gradient background */
+}
+
+.login-container {
+    width: 100%;  
+    max-width: 400px; /* Batas maksimum untuk lebar */
+    padding: 30px; /* Menambah padding untuk kesan lebih luas */
+    background-color: rgba(255, 255, 255, 0.9); /* Putih dengan transparansi */
+    border-radius: 12px; /* Sudut lebih membulat */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih lembut */
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efek blur di belakang kontainer */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #007BFF; /* Warna teks judul */
+    font-weight: bold; /* Cetak tebal untuk judul */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px; /* Padding lebih besar untuk input */
+    margin: 10px 0;
+    border: 2px solid #007BFF; /* Border berwarna biru */
+    border-radius: 8px; /* Sudut lebih membulat */
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transisi untuk warna border */
+}
+
+.login-container input:focus {
+    border-color: #0056b3; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Bayangan saat fokus */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px; /* Padding lebih besar untuk tombol */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Sudut lebih membulat pada tombol */
+    cursor: pointer;
+    font-size: 1.1em; /* Ukuran font untuk tombol */
+    transition: background-color 0.3s, transform 0.2s; /* Transisi untuk warna latar belakang dan transformasi */
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: opacity 0.3s; /* Transisi untuk efek error */
+}

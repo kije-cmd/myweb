@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Belanja Harian</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.21/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.9/jspdf.plugin.autotable.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Pencatatan Belanja Harian</h1>
+        <button id="toggleMode" onclick="toggleDarkLightMode()">🌙</button>
+        <button id="logoutBtn">Logout</button>
+    </header>    
+
+    <section class="form-section container">
+        <h2>Tambah Bahan Belanja</h2>
+        <form id="belanjaForm">
+            <label for="namaBahan">Nama Bahan:</label>
+            <input type="text" id="namaBahan" name="namaBahan" required>
+
+            <label for="jumlahBahan">Jumlah:</label>
+            <input type="number" id="jumlahBahan" name="jumlahBahan" required>
+
+            <label for="hargaBahan">Harga per Unit:</label>
+            <input type="number" id="hargaBahan" name="hargaBahan" required>
+
+            <button type="submit">Tambah Bahan</button>
+        </form>
+    </section>
+
+    <section class="list-section container">
+        <h2>Daftar Belanja</h2>
+        <input type="text" id="searchInput" placeholder="Cari bahan..." onkeyup="searchIngredients()">
+        <table id="belanjaList">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Nama Bahan</th>
+                    <th>Jumlah</th>
+                    <th>Harga per Unit</th>
+                    <th>Total Harga</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Bahan belanja akan ditambahkan di sini secara dinamis -->
+            </tbody>
+        </table>
+        <div class="total-price">
+            <strong>Total Keseluruhan: Rp <span id="totalHargaKeseluruhan">0</span></strong>
+        </div>
+        <div class="action-buttons">
+            <button id="downloadBtn" onclick="downloadData()">📥 Download PDF</button>
+            <button id="whatsappBtn" onclick="sendToWhatsApp()">📲 Kirim ke WhatsApp</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="logout.js"></script>
+</body>
+</html>

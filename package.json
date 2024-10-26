@@ -1,0 +1,17 @@
+{
+  "name": "grocery-bud-css-js-main",
+  "version": "1.0.0",
+  "description": "Hi, this repository contains a Grocery Bud List web application created using HTML, CSS, and JavaScript. The app allows users to manage their grocery shopping list by adding, editing, and removing items. This project is a practical example of DOM manipulation and local storage usage in JavaScript.",
+  "main": "forgot-password.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+}
